@@ -1,0 +1,22 @@
+.notice_announcement{
+    margin-top: 150px;
+    height: 100vh;
+    display: flex;
+    justify-content:space-around;
+}
+.box{
+    width: 500px;
+    height: 600px;
+    /* background-color: cyan; */
+    border-radius: 20px;
+    border: var(--clr-neon) 5px solid;
+    box-shadow:0 0 30px 5px var(--clr-neon);
+}
+.box:hover{
+    box-shadow:0 0 50px 15px var(--clr-neon);
+}
+.box h2{
+    font-family: cursive;
+    text-align: center;
+    color: var(--clr-neon);
+}
