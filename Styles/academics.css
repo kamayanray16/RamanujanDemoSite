@@ -1,6 +1,10 @@
 .academics{
     height: 100vh;
     display: flex;
+    flex-direction: column;
+}
+.main-card{
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
