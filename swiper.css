@@ -1,0 +1,24 @@
+/* :root {
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
+} */
+.swiper {
+  margin-top: 100px;
+}
+.swiper-container {
+  box-shadow: 0px 0px 30px 5px var(--clr-neon);
+  border: solid 3px var(--clr-neon);
+  border-radius: 20px;
+  overflow: hidden;
+  height: 85vh;
+  width: 70vw;
+  position: relative;
+}
+.swiper-container:hover{
+    box-shadow: 0px 0px 30px 15px var(--clr-neon);
+}
+
+.swiper-slide {
+  background-size: 70vw 85vh;
+}
+
