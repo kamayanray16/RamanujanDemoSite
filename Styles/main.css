@@ -1,0 +1,210 @@
+:root {
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--clr-bg);
+}
+
+input {
+  position: relative;
+  top: -30px;
+  float: right;
+}
+.neon-button {
+  font-family: cursive;
+  margin-right: 20px;
+  color: var(--clr-neon);
+  font-size: 1.2rem;
+  border: var(--clr-neon) 0.125em solid;
+  padding: 0.25em 1em;
+  text-decoration: none;
+  list-style: none;
+  text-shadow: 0 0 0.45em var(--clr-neon);
+  border-radius: 0.25em;
+  position: relative;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+}
+.neon-button::before {
+  content: "";
+  position: absolute;
+  background-color: var(--clr-neon);
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+.neon-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  opacity: 0;
+  background: var(--clr-neon);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.neon-button:hover {
+  color: var(--clr-bg);
+  text-shadow: none;
+}
+
+.neon-button:hover::before {
+  opacity: 1;
+}
+.neon-button:hover::after {
+  opacity: 1;
+}
+
+/* :root {
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
+} */
+.swiper {
+  margin-top: 100px;
+}
+.swiper-container {
+  box-shadow: 0px 0px 30px 5px var(--clr-neon);
+  border: solid 3px var(--clr-neon);
+  border-radius: 20px;
+  overflow: hidden;
+  height: 85vh;
+  width: 70vw;
+  position: relative;
+}
+.swiper-container:hover {
+  box-shadow: 0px 0px 30px 15px var(--clr-neon);
+}
+
+.swiper-slide {
+  background-size: 70vw 85vh;
+}
+
+.notice_announcement {
+  margin-top: 150px;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+}
+.box {
+  width: 500px;
+  height: 600px;
+  /* background-color: cyan; */
+  border-radius: 20px;
+  border: var(--clr-neon) 5px solid;
+  box-shadow: 0 0 30px 5px var(--clr-neon);
+}
+.box:hover {
+  box-shadow: 0 0 20px 15px var(--clr-neon);
+}
+.box h2 {
+  font-family: cursive;
+  text-align: center;
+  color: var(--clr-neon);
+}
+
+.academics {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card {
+  height: 330px;
+  width: 330px;
+  background-image: url(/images/students.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  border: var(--clr-neon) 5px solid;
+  box-shadow: 0 0 30px 5px var(--clr-neon);
+  margin-top: 80px;
+  margin-right: 15px;
+  transform: skew(349deg, 20deg);
+  transition: transform 1s linear;
+}
+/* .two{
+    transform: skewX(19deg);
+} */
+.card:hover {
+  transform: scale(1.3, 1.3);
+  box-shadow: 0 0 20px 15px var(--clr-neon);
+}
+
+.card h2 {
+  position: relative;
+  top: 110%;
+  font-family: cursive;
+  text-align: center;
+  color: var(--clr-neon);
+}
+
+.acad{
+    margin:0 38%;
+    text-align: center;
+    display: inline-block;
+    color: var(--clr-neon);
+    font-family: cursive;
+    font-size: 2.5rem;
+    border: var(--clr-neon) 0.125em solid;
+  padding: 0.25em 1em;
+  text-decoration: none;
+  list-style: none;
+  text-shadow: 0 0 0.45em var(--clr-neon);
+  border-radius: 0.25em;
+  position: relative;
+    top: 103px;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+}
+
+.acad::before {
+    content: "";
+    position: absolute;
+    background-color: var(--clr-neon);
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(1em);
+    opacity: 0.7;
+  }
+  
+  .acad::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    background: var(--clr-neon);
+    z-index: -1;
+    transition: opacity 100ms linear;
+  }
+  
+  .acad:hover {
+    color: var(--clr-bg);
+    text-shadow: none;
+  }
+  
+  .acad:hover::before {
+    opacity: 1;
+  }
+  .acad:hover::after {
+    opacity: 1;
+  }
