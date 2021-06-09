@@ -69,10 +69,7 @@ input {
   opacity: 1;
 }
 
-/* :root {
-  --clr-neon: hsl(317 100% 54%);
-  --clr-bg: hsl(323 21% 16%);
-} */
+
 .swiper {
   margin-top: 100px;
 }
@@ -100,8 +97,8 @@ input {
   justify-content: space-around;
 }
 .box {
-  width: 500px;
-  height: 600px;
+  width: 400px;
+  height: 500px;
   /* background-color: cyan; */
   border-radius: 20px;
   border: var(--clr-neon) 5px solid;
@@ -116,20 +113,20 @@ input {
   color: var(--clr-neon);
 }
 
-.academics{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+.academics {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-.main-card{
-    margin-top: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.main-card {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .card {
-  height: 330px;
-  width: 330px;
+  height: 270px;
+  width: 270px;
   background-image: url(/images/students.jpg);
   background-size: cover;
   border-radius: 20px;
@@ -140,9 +137,7 @@ input {
   transform: skew(349deg, 20deg);
   transition: transform 1s linear;
 }
-/* .two{
-    transform: skewX(19deg);
-} */
+
 .card:hover {
   transform: scale(1.3, 1.3);
   box-shadow: 0 0 20px 15px var(--clr-neon);
@@ -156,65 +151,64 @@ input {
   color: var(--clr-neon);
 }
 
-.acad{
-    margin:0 38%;
-    text-align: center;
-    display: inline-block;
-    color: var(--clr-neon);
-    font-family: cursive;
-    font-size: 2rem;
-    border: var(--clr-neon) 0.125em solid;
+.acad {
+  margin: 0 38%;
+  text-align: center;
+  display: inline-block;
+  color: var(--clr-neon);
+  font-family: cursive;
+  font-size: 2rem;
+  border: var(--clr-neon) 0.125em solid;
   padding: 0.25em 1em;
   text-decoration: none;
   list-style: none;
   text-shadow: 0 0 0.45em var(--clr-neon);
   border-radius: 0.25em;
   position: relative;
-    top: 30px;
+  top: 30px;
   box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
 }
 
 .acad::before {
-    content: "";
-    position: absolute;
-    background-color: var(--clr-neon);
-    top: 120%;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
-    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
-    filter: blur(1em);
-    opacity: 0.7;
-  }
-  
-  .acad::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    box-shadow: 0 0 2em 0.5em var(--clr-neon);
-    opacity: 0;
-    background: var(--clr-neon);
-    z-index: -1;
-    transition: opacity 100ms linear;
-  }
-  
-  .acad:hover {
-    color: var(--clr-bg);
-    text-shadow: none;
-  }
-  
-  .acad:hover::before {
-    opacity: 1;
-  }
-  .acad:hover::after {
-    opacity: 1;
-  }
+  content: "";
+  position: absolute;
+  background-color: var(--clr-neon);
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
 
+.acad::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  opacity: 0;
+  background: var(--clr-neon);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
 
-  /* .center_and_cell{
+.acad:hover {
+  color: var(--clr-bg);
+  text-shadow: none;
+}
+
+.acad:hover::before {
+  opacity: 1;
+}
+.acad:hover::after {
+  opacity: 1;
+}
+
+/* .center_and_cell{
       height: 100vh;
   } */
