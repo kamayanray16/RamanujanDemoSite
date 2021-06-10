@@ -2,9 +2,9 @@ const swiper = new Swiper(".container1", {
     // Optional parameters
     // direction: "vertical",
     // loop: true,
-    // autoplay: {
-    //     delay: 2000,
-    // },
+    autoplay: {
+        delay: 2000,
+    },
     effect: "cube",
     grabCursor: true,
     cubeEffect: {
@@ -41,9 +41,9 @@ var swiper2 = new Swiper('.container2', {
     spaceBetween: 40,
     // loop: true,
     // clickable: true,
-    // autoplay: {
-    //     delay: 2000,
-    // },
+    autoplay: {
+        delay: 2000,
+    },
     freeMode: true,
     pagination: {
       el: '.pagination2',
