@@ -1,0 +1,51 @@
+.academics{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card{
+    height: 350px;
+    width: 350px;
+    /* background-color: white; */
+    border-radius: 20px;
+    border: var(--clr-neon) 5px solid;
+    box-shadow:0 0 30px 5px var(--clr-neon);
+    /* overflow: hidden; */
+}
+.card:hover{
+    position: relative;
+    z-index: 1000;
+    box-shadow:0 0 20px 15px var(--clr-neon);
+    background-color: white;
+}
+.card img{
+    /* height: 350px;
+    width: 350px; */
+    border-radius: 15px;
+    object-fit: cover;
+    z-index: -1;
+}
+.card img::after:hover{
+    z-index: -1
+    ;
+}
+/* img:hover{
+    background-color: white;
+    z-index: 2;
+} */
+.card h2{
+    margin-top: 30px;
+    font-family: cursive;
+    text-align: center;
+    color: var(--clr-neon);
+    
+}
+/* .card{
+    ;
+    background-size: contain;
+} */
